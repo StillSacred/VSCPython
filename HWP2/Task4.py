@@ -13,11 +13,9 @@ def read_file():
         indexs = list(map(int,data.readlines()))
     return indexs
 
-# улучшение 
-
-n = int(input("Введите число N: "))
-lst_number = [i for i in range(-n, n+1)]
-write_file(n)
+num = int(input("Введите число N: "))
+lst_number = [i for i in range(-num, num+1)]
+write_file(num)
 lst_index = read_file()
 prod = 1
 for i in range(len(lst_index)):
