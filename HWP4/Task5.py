@@ -1,7 +1,6 @@
 # Даны два файла, в каждом из которых находится запись многочлена.
 # Задача - сформировать файл, содержащий сумму многочленов.
 
-
 from itertools import zip_longest
 
 def delete_pow(string: str):
@@ -10,7 +9,6 @@ def delete_pow(string: str):
         return delete_pow(string)
     else:
         return string
-
 
 def get_coefs_from_poly(string: str):
     string = string.replace('*x', '')
