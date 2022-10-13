@@ -31,3 +31,46 @@ def decoding(txt):
 s = input("Введите текст для кодировки: ")
 print(f"Текст после кодировки: {coding(s)}")
 print(f"Текст после дешифровки: {decoding(coding(s))}")
+
+
+# RLE запаковщик
+
+# def rle_crypt(file_name: str):
+#     with open(file_name, 'r') as file:
+#         data = file.readlines()
+#     count = 1
+#     string = ''
+#     for i in data:
+#         for j in range(len(i)-1):
+#             if i[j] == i[j+1]:
+#                 count += 1
+#             else:
+#                 string += str(count) + i[j]
+#                 count = 1
+#         string += str(count) + i[j+1]
+#     with open('crypted_data.txt', 'w') as file:
+#         file.write(string)
+# rle_crypt('data.txt')
+
+
+# RLE распаковщик
+
+# def rle_decrypt(file_name: str):
+#     with open(file_name, 'r') as file:
+#         cr_data = ''.join(file.readlines())
+#     arr = []
+#     string = ''
+#     for i in range(len(cr_data)):
+#         if cr_data[i].isdigit():
+#             string += cr_data[i]
+#         else:
+#             arr.append([int(string), cr_data[i]])
+#             string = ''
+#     decr_data = ''
+#     for i in arr:
+#         for j in range(len(i)-1):
+#             decr_data += i[j] * i[j+1]
+#     print(decr_data)
+#     with open('decrypted_data.txt', 'w') as file:
+#         file.write(decr_data)
+# rle_decrypt('crypted_data.txt')
