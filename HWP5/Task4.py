@@ -27,7 +27,6 @@ def decoding(txt):
             res = res + txt[i] * int(number)
             number = ''
     return res
-
 s = input("Введите текст для кодировки: ")
 print(f"Текст после кодировки: {coding(s)}")
 print(f"Текст после дешифровки: {decoding(coding(s))}")
