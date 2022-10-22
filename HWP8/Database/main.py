@@ -12,7 +12,7 @@ def sort_data(number,read,write,sor,da,data):
         elif d=='5':
             print(*read(),sep='')
         elif d=='6':
-            print(*sor(input('Введите фамилию ученика:'),read()),sep='')
+            print(*sor(input('Введите фамилию ученика: '),read()),sep='')
         elif d=='7':
             write(data())
         elif d=='8':
